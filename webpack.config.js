@@ -12,7 +12,12 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
-      },
+    },
+    devServer: {
+        static: {
+          directory: __dirname,
+        },
+    },
     module: {
         rules: [
           {
